@@ -207,21 +207,9 @@ For each:
 - Train a simple model (e.g., `LogisticRegression` or `DecisionTreeClassifier`) on both the original and resampled training sets
 - Evaluate on the **original (not resampled) test set** using precision, recall, and F1 for the high-value class
 
-### 4.4 — Compare results
-
-Create a summary table comparing:
-
-| Method | Precision | Recall | F1 |
-|---|---|---|---|
-| No resampling | | | |
-| Oversampling | | | |
-| Undersampling | | | |
-
-Which method best balances precision and recall for the high-value class? Write 3-5 sentences explaining your findings.
-
 ### Deliverable for Task 4
 
-Customer-level dataset, class distribution analysis, resampling results, and a comparison table with written interpretation.
+Customer-level dataset, class distribution analysis, and resampling results with evaluation metrics for each approach.
 
 ---
 
@@ -255,23 +243,9 @@ df_obs = df[df["InvoiceDate"] <= observation_end]
 df_pred = df[df["InvoiceDate"] >= prediction_start]
 ```
 
-### 5.4 — Compare and reflect
-
-Create a table comparing:
-
-| Split method | Accuracy | Precision | Recall | F1 |
-|---|---|---|---|---|
-| Random (leaked) | | | | |
-| Temporal (correct) | | | | |
-
-Write 5-8 sentences explaining:
-- Why did the leaked model perform better?
-- What specific information leaked?
-- Why is the temporal split the correct approach for this task?
-
 ### Deliverable for Task 5
 
-Side-by-side comparison of leaked vs. correct performance, identification of the leaked information, and a written explanation.
+Both the leaked and correct model results, with identification of the leaked information and a written explanation of why the temporal split is the correct approach.
 
 ---
 
